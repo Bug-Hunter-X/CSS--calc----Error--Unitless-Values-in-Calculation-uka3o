@@ -1,0 +1,10 @@
+The corrected CSS code with explicit units is:
+
+```css
+.element {
+  width: calc(100% - 100px);
+  /* Or other appropriate unit like em, rem, etc. */
+}
+```
+
+By including the unit (`px` in this example), the `calc()` function can correctly perform the calculation.  Using consistent units for each operand is crucial. Ensure all your units in the calculation are compatible; for example, do not mix pixels and percentages directly without proper conversion.
