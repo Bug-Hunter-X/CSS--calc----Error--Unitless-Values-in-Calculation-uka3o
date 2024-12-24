@@ -1,0 +1,15 @@
+The following CSS code snippet demonstrates an uncommon error related to the usage of the `calc()` function and the `unitless` values.  The `calc()` function expects its operands to have units.  If you try to use a unitless number directly with an operator, it may result in unexpected behavior or an error depending on the browser.
+
+```css
+.element {
+  width: calc(100% - 100);
+}
+```
+
+In this example, `100` is unitless, causing problems.  The correct way to specify a number within the `calc()` function is to explicitly add units:
+
+```css
+.element {
+  width: calc(100% - 100px);
+}
+```
